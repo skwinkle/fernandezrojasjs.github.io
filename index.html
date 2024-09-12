@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>nigga</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="validar.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="main">
+        <form action="index.html" method="get" name="registro" onsubmit="return validar (this)" class="formulario">
+            <label>Nombre: </label>
+            <input class="cajas" type="text" name="nombre" id="nombre" placeholder="Julian es gei">
+
+            <label>Edad</label>
+            <input class="cajas" type="text" name="edad" id="edad">
+
+            <legend class="form__sex">Selecciona sexo</legend>
+                <blockquote>
+                    <label>Femenino: </label>
+                    <input type="radio" name="sexo" value="femenino" class="cajas cajas--sex">
+                    <label>Masculino: </label>
+                    <input type="radio" name="sexo" value="femenino" class="cajas cajas--sex">
+                </blockquote>
+
+                <label>
+                    <p>Deporte Favorito:</p>
+                    <select  id="deporte" name="deporte" class="deporte" required class="cajas">
+                        <option value="futbol">Fútbol</option>
+                        <option value="basquetbol">Basquetbol</option>
+                        <option value="beisbol">Beisbol</option>
+                        <option value="tenis">Tenis</option>
+                        <option value="ninguno">ninguno</option>
+                    </select>
+                    <input type="submit" value="Enviar" name="Enviar" class="boton">
+                    <input type="submit" value="Reset" name="Reset" class="boton">
+                </label>
+        </form>
+    </div>
+</body>
+</html>
